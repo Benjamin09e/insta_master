@@ -1,0 +1,19 @@
+.user {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user .user_profil img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 4px rgb(0, 255, 132);
+  margin-bottom: 10px;
+}
+
+.user_name{
+  right: 215px;
+  position: absolute;
+}

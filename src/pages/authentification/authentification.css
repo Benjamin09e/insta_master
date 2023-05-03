@@ -1,0 +1,139 @@
+
+.container-card {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+
+  border-radius: 3px;
+  padding: 10px 30px;
+}
+
+.container-card-child {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 10vh;
+  border-radius: 3px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#container-card-child {
+  margin-top: -1px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 10vh;
+  border-radius: 3px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.tf-height {
+  height: 14%;
+  width: 15%;
+}
+
+/* ------------ Input -------------------------------- */
+
+input {
+  margin: 0.4rem 0;
+  padding: 0.5rem 0;
+  border: 1px solid #eee;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.field input {
+  width: 100%;
+}
+
+.btn-layer {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ------------ Input -------------------------------- */
+
+/* ------------ hr -------------------------------- */
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin-top: 5%;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr:after {
+  background: #fff;
+  content: "OU";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+/* ------------ hr -------------------------------- */
+
+.space-btn {
+  margin-top: 25px;
+}
+
+.style-link {
+  padding-top: 5%;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* ---------- button Color -------------------------- */
+.btn-color {
+  background-color: #1877f2;
+  text-align: center;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ---------- button Color -------------------------- */
+
+/* ---------- Span Color -------------------------- */
+.sp-color {
+  color: #1877f2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.block {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sp-text {
+  color: #07336d;
+  font-weight: bold;
+}
+
+/* ---------- Span Color -------------------------- */

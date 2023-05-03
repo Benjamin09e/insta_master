@@ -1,0 +1,120 @@
+:root {
+  --swiper-navigation-size: 23px;
+}
+
+.home_containte{
+  width: 100%;
+  height: max-content;
+  display: flex ;
+  justify-content: space-evenly ;
+  padding-top: 20px ;
+}
+
+.home_left{
+  height: 240vh;
+  width: 55%;
+}
+
+.home_left .status_users{
+  height: 9vh;
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.swiper-slide .img_user {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 4px rgb(0, 255, 132);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+
+.swiper-slide {
+  width: 50px !important;
+  height: 50px !important;
+  text-align: center;
+  font-size: 18px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.swiper-slide .p_user {
+  margin-top: 89px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.swiper{
+  height: 100% !important;
+}
+
+.home_right{
+  height: 70vh;
+  width: 30%;
+  background-color: rgb(22, 80, 29);
+}
+
+.home_posts{
+  height: 100vh;
+  width: 90%;
+  background-color: rgb(126, 126, 36);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ----------------------------- home_profil------------------------------*/
+
+.home_right .home_profil{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_name {
+  right: 215px;
+  position: absolute;
+
+}
+
+.p_name{
+  margin: 0;
+  padding: 0;
+}
+
+
+.home_right .home_profil .home_img img{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 4px rgb(0, 255, 132);
+}
+
+
+/* ----------------------------- see_more------------------------------*/
+
+.see_more{
+  display: flex;
+  justify-content: space-around;
+}
+
+.p_links{
+  margin: 0;
+  padding: 0;
+  
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.h_author{
+  padding-left: 15px;
+  padding-right: 15px;
+}

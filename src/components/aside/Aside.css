@@ -1,0 +1,68 @@
+
+.aside-bar{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-left:20px;
+    text-align: left;
+    left: 0;
+    top:0;
+    border-right: 1px solid rgb(218, 212, 204);
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+
+.aside-links{
+    width: 80%;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: 0,4s;
+}
+
+
+.aside-bar .icon{
+    margin-right: 20px;
+    font-size: 30px;
+    
+
+}
+
+.aside-bar h1{
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+
+.aside-links{
+    padding-left: 20px;
+    margin-top:4px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.aside-links:hover{
+    background-color: rgba(255, 255, 255, 0.112);
+    
+}
+
+/*
+.btn-profil{
+    position: absolute;
+    bottom: 50px;
+    border: none;
+    
+}
+
+*/ 
