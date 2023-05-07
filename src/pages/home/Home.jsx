@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
@@ -7,7 +8,15 @@ import "./Home.css";
 import user from "../../assets/images/profil.jpg";
 import Aside from "../../components/aside/Aside";
 import User from "../../components/user/User";
-import { story } from "../../assets/data/data";
+import { story, follow } from "../../assets/data/data";
+import {
+  AiOutlineEllipsis,
+  AiFillWechat,
+  AiOutlineHeart,
+} from "react-icons/ai";
+import { CiSaveDown1, CiFaceSmile } from "react-icons/ci";
+import { RiShareForwardFill } from "react-icons/ri";
+import Post from "../../components/post/Post";
 
 const Home = () => {
   return (
@@ -22,15 +31,23 @@ const Home = () => {
             className="mySwiper"
           >
             {story?.map((story) => (
-              <SwiperSlide>
+              <SwiperSlide key={story.id}>
                 <img src={story.img} className="img_user" />
                 <p className="p_user">{story.username}</p>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        
 
-        <div className="home_posts"></div>
       </div>
 
       <div className="home_right">
@@ -54,12 +71,15 @@ const Home = () => {
             <p>Voir tout</p>
           </div>
         </div>
-        <User />
-        <User />
-        <User />
-        <User />
-        <p className="p_links">A propos . Aide . Presse . API . Emploi. Confidentialité.</p>
-        <p className="p_links">Condition . Lieux . Langue . API . Meta Verified.</p>
+        {follow?.map((user) => (
+          <User users={user} key={user.id} />
+        ))}
+        <p className="p_links">
+          A propos . Aide . Presse . API . Emploi. Confidentialité.
+        </p>
+        <p className="p_links">
+          Condition . Lieux . Langue . API . Meta Verified.
+        </p>
 
         <h4 className="h_author">®2023 INSTAGRAM PAR Benjamin EKIA</h4>
       </div>

@@ -2,119 +2,206 @@
   --swiper-navigation-size: 23px;
 }
 
-.home_containte{
+.home_containte {
   width: 100%;
   height: max-content;
-  display: flex ;
-  justify-content: space-evenly ;
-  padding-top: 20px ;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
 }
 
-.home_left{
-  height: 240vh;
+.home_left {
+  height: max-content;
   width: 55%;
 }
 
-.home_left .status_users{
-  height: 9vh;
+.home_left .status_users {
+  height: 10vh;
   width: 100%;
   border-radius: 50%;
-  margin-bottom: 25px;
+  
 }
 
-.swiper-slide .img_user {
+.status_users .swiper-slide .img_user {
   width: 42px;
   height: 42px;
   border-radius: 50%;
   border: solid 4px rgb(0, 255, 132);
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
 }
 
-
-
-.swiper-slide {
-  width: 50px !important;
-  height: 50px !important;
+.status_users .swiper-slide {
+  width: 100px !important;
+  height: 80% !important;
   text-align: center;
-  font-size: 18px;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
 }
 
-.swiper-slide .p_user {
-  margin-top: 89px;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+.status_users .swiper-slide .p_user {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.swiper{
+.status_users .swiper {
   height: 100% !important;
 }
 
-.home_right{
+.home_right {
   height: 70vh;
   width: 30%;
-  background-color: rgb(22, 80, 29);
 }
 
-.home_posts{
-  height: 100vh;
+.home_posts {
+  height: 80vh;
   width: 90%;
-  background-color: rgb(126, 126, 36);
+  border-bottom: solid 1px white;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 15px;
 }
 
 /* ----------------------------- home_profil------------------------------*/
 
-.home_right .home_profil{
+.home_right .home_profil {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .home_name {
   right: 215px;
   position: absolute;
-
 }
 
-.p_name{
+.p_name {
   margin: 0;
   padding: 0;
 }
 
-
-.home_right .home_profil .home_img img{
+.home_right .home_profil .home_img img {
   width: 42px;
   height: 42px;
   border-radius: 50%;
   border: solid 4px rgb(0, 255, 132);
 }
 
-
 /* ----------------------------- see_more------------------------------*/
 
-.see_more{
+.see_more {
   display: flex;
   justify-content: space-around;
 }
 
-.p_links{
+.p_links {
   margin: 0;
   padding: 0;
-  
+
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.h_author{
+.h_author {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* ----------------------------- post------------------------------*/
+
+.post_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_top .home_img img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 4px rgb(0, 255, 132);
+  margin: 10px 10px;
+}
+
+.post_top .home_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_top .p_name {
+  margin-left: 10px;
+}
+
+.details_post{
+  font-size: 35px;
+}
+.details_post:hover{
+  color: rgba(223, 221, 221, 0.751);
+}
+
+.post_awesome{
+  font-size: 20px;
+  margin-left: 5px;
+}
+.post_awesome:hover{
+  color: rgba(223, 221, 221, 0.751);
+}
+
+/* ----------------------------- post_containte------------------------------*/
+.post_containte {
+  width: 100%;
+  height: 45vh;
+  background-color: coral;
+}
+
+.post_icon {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.post_input input {
+  width: 100%;
+  background-color: none;
+  border: none;
+  border-radius: none;
+  background: none;
+  color: white;
+}
+.post_input input:focus {
+  outline: none;
+}
+
+.post_input .post_smile {
+  position: absolute;
+  font-size: 20px;
+}
+.post_input .post_smile:hover {
+  color: rgba(223, 221, 221, 0.751);
+}
+
+.post_like h5{
+  margin: 0;
+  padding: 0;
+}
+.post_like .post_title{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.post_discription p {
+  margin: 0;
+  padding: 0;
 }

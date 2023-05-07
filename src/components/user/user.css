@@ -3,6 +3,7 @@
   padding-right: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .user .user_profil img {
@@ -13,7 +14,9 @@
   margin-bottom: 10px;
 }
 
-.user_name{
-  right: 215px;
-  position: absolute;
+
+
+.user_profil .img_profil{
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,128 @@
+.profile_containte {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 170vh;
+}
+
+/*------------------------------ profile_user -------------------------*/
+.profile_containte .profile_user {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  
+  justify-content: space-around;
+}
+
+.profile_user{
+  margin-top: 10px;
+}
+
+.profile_img .profile_user {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: solid 4px rgb(255, 89, 0);
+}
+
+.profile_img {
+  padding-left: 40px;
+  padding-top: 35px;
+}
+
+/*------------------------------ profile_story -------------------------*/
+.profile_containte .profile_story {
+  
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.profile_story .img_story img {
+  width: 72px;
+  height: 72px;
+  
+  border-radius: 50%;
+  border: solid 4px rgb(16, 80, 129);
+}
+
+.profile_story .img_story {
+ 
+  padding-left: 40px;
+  
+}
+
+/*------------------------------ profile_status -------------------------*/
+.profile_containte .profile_status {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_status .profile_publication {
+  margin-right: 20px;
+}
+.profile_status .profile_identifie {
+  margin-left: 20px;
+}
+
+/*------------------------------ profile_card -------------------------*/
+.profile_containte .profile_card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3px;
+  width: 100%;
+  height: max-content;
+}
+
+.profile_card .card {
+  display: flex;
+  background-color: rgb(6, 6, 6);
+  width: 33%;
+  height: 30vh;
+  padding-top: 5px;
+}
+
+.card .card_img{
+  width: 100%;
+}
+.card:hover .card_hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 5, 5, 0.343);
+}
+
+.card:hover{
+  scale: 1;
+}
+
+.card_hover{
+  display:none;
+  
+  
+}
+
+/*------------------------------ profile_footer -------------------------*/
+.profile_containte .profile_footer {
+  margin-top: 15px;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_footer .containt_footer  {
+  
+}
