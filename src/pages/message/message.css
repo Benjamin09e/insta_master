@@ -1,0 +1,61 @@
+.container_message {
+  display: flex;
+
+  width: 70%;
+  height: 93vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  border: 1px solid white;
+  border-radius: 9px;
+}
+
+.container_message .content_aside {
+  display: flex;
+  flex-direction: column;
+
+  width: 55%;
+}
+
+.container_message .message_profil {
+  width: 100%;
+  height: 10vh;
+  border-right: 1px solid white;
+}
+
+.container_message  .content_aside .message_profil{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.container_message .message_aside {
+  width: 100%;
+  height: 90vh;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  
+}
+
+.container_message .message_aside p {
+    margin-left: 15px;
+    
+  }
+
+.container_message .message_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.btn_color{
+    background-color: rgb(30, 124, 232);
+    padding: 15px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
