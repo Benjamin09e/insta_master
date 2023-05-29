@@ -1,0 +1,69 @@
+.content_creer{
+    width: 100%;
+    height: 100vh ;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.405);
+    
+}
+
+.content_creer .fa_close{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 25px;
+    
+}
+
+.content_creer .fa_close .ai_close{
+    font-size: 35px;
+}
+
+.content_creer .container_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(43, 48, 48);
+    width: 37%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 8px;
+    
+}
+
+.content_creer .head_modal{
+   
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.content_creer .main_modal{
+   
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_creer .btn_modal{
+    background-color: rgb(20, 145, 218);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.main_modal .im_video{
+    font-size: 45px;
+}
+
+.modal_none{
+    display: none;
+}

@@ -10,9 +10,12 @@ import {
   TfiPlus,
   TfiMenu,
 } from "react-icons/tfi";
+import { CgProfile } from "react-icons/cg";
+
 import "./Aside.css";
 
-const Aside = () => {
+const Aside = ({setCreer, setPlus, plus}) => {
+  const Plus = ()=>setPlus((plus)=>!plus)
   return (
     <div className="aside-bar">
       <h1>Instagram</h1>
@@ -22,23 +25,26 @@ const Aside = () => {
       <NavLink to="/recherche" className="aside-links">
         <TfiSearch className="icon" /> Recherche
       </NavLink>
-      <NavLink to="/" className="aside-links">
+      <NavLink to="/decouvrir" className="aside-links">
         <TfiLocationArrow className="icon" /> Découvrir
       </NavLink>
-      <NavLink to="/" className="aside-links">
+      <NavLink to="/reels" className="aside-links">
         <TfiControlPlay className="icon" /> Reels
       </NavLink>
-      <NavLink to="/" className="aside-links">
+      <NavLink to="/message" className="aside-links">
         <TfiLock className="icon" /> Messages
       </NavLink>
-      <NavLink to="/" className="aside-links">
+      <NavLink to="/notification" className="aside-links">
         <TfiBell className="icon" /> Notifications
       </NavLink>
-      <NavLink to="/" className="aside-links">
+      <button  onClick={()=>setCreer(true)}  className="aside-links">
         <TfiPlus className="icon" /> Créer
-      </NavLink>
+      </button>
       <NavLink to="/profile" className="aside-links">
-        <TfiMenu className="icon" /> Profil
+        <CgProfile className="icon" /> Profil
+      </NavLink>
+      <NavLink to="/plus" onClick={Plus} className="aside-links">
+        <TfiMenu className="icon" /> Plus
       </NavLink>
     </div>
   );

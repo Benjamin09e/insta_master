@@ -1,15 +1,22 @@
 .App{
   width: 100%;
-  height: max-content;
+  min-height: 100vh;
   color:white;
   display: flex;
   justify-content: flex-end;
   background-color: black;
+}
 
+.Applogin{
+  width: 100%;
+  min-height: 100vh;
+  color:black;
+  background-color: rgb(255, 255, 255);
 }
 
 .App_main{
   width: 79%;
+  margin-left: 25%;
   
 }
 

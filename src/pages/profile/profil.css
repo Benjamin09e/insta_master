@@ -6,33 +6,64 @@
 }
 
 /*------------------------------ profile_user -------------------------*/
-.profile_containte .profile_user {
-  width: 100%;
-  height: 40vh;
+.profile_content {
+  height: max-content;
   display: flex;
-  
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
-.profile_user{
-  margin-top: 10px;
+.profile_content .profile_user {
+  width: 30%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.profile_img .profile_user {
-  width: 92px;
-  height: 92px;
+.profile_user .profile_img {
+  height: 100%;
   border-radius: 50%;
-  border: solid 4px rgb(255, 89, 0);
 }
 
-.profile_img {
-  padding-left: 40px;
-  padding-top: 35px;
+.profile_content .profile_text {
+  width: 70%;
+  height: 20vh;
 }
+
+.profile_text .profile_element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.profile_text .profile_element p,
+.profile_text .profile_element button {
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile_text .profile_notif {
+  display: flex;
+  margin-bottom: 10px;
+
+}
+.profile_text .profile_notif p{
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.profile_text .profile_plus p{
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 
 /*------------------------------ profile_story -------------------------*/
 .profile_containte .profile_story {
-  
   width: 100%;
   height: 25vh;
   display: flex;
@@ -42,17 +73,14 @@
 }
 
 .profile_story .img_story img {
-  width: 72px;
-  height: 72px;
-  
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
   border: solid 4px rgb(16, 80, 129);
 }
 
 .profile_story .img_story {
- 
   padding-left: 40px;
-  
 }
 
 /*------------------------------ profile_status -------------------------*/
@@ -64,11 +92,23 @@
   justify-content: center;
 }
 
+.profile_status {
+  cursor: pointer;
+}
+
 .profile_status .profile_publication {
   margin-right: 20px;
+  padding-top: 45px;
 }
+
+.profile_status .profile_reel {
+  margin-left: 20px;
+  padding-top: 45px;
+}
+
 .profile_status .profile_identifie {
   margin-left: 20px;
+  padding-top: 45px;
 }
 
 /*------------------------------ profile_card -------------------------*/
@@ -81,7 +121,7 @@
   height: max-content;
 }
 
-.profile_card .card {
+.profile_card {
   display: flex;
   background-color: rgb(6, 6, 6);
   width: 33%;
@@ -89,28 +129,8 @@
   padding-top: 5px;
 }
 
-.card .card_img{
-  width: 100%;
-}
-.card:hover .card_hover{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 8;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(6, 5, 5, 0.343);
-}
-
-.card:hover{
-  scale: 1;
-}
-
-.card_hover{
-  display:none;
-  
-  
+.show {
+  border-top: 3px solid #fefcfc;
 }
 
 /*------------------------------ profile_footer -------------------------*/
@@ -123,6 +143,5 @@
   align-items: center;
 }
 
-.profile_footer .containt_footer  {
-  
+.profile_footer .containt_footer {
 }

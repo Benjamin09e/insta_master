@@ -27,6 +27,8 @@
     margin-bottom: 15px;
     border-radius: 10px;
     transition: 0,4s;
+    border: none;
+    background: none;
 }
 
 
@@ -53,8 +55,7 @@
 }
 
 .aside-links:hover{
-    background-color: rgba(255, 255, 255, 0.112);
-    
+    background-color: rgba(255, 255, 255, 0.112);  
 }
 
 /*

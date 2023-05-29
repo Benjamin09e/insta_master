@@ -1,21 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import "./Home.css";
 import user from "../../assets/images/profil.jpg";
-import Aside from "../../components/aside/Aside";
 import User from "../../components/user/User";
 import { story, follow } from "../../assets/data/data";
-import {
-  AiOutlineEllipsis,
-  AiFillWechat,
-  AiOutlineHeart,
-} from "react-icons/ai";
-import { CiSaveDown1, CiFaceSmile } from "react-icons/ci";
-import { RiShareForwardFill } from "react-icons/ri";
 import Post from "../../components/post/Post";
 
 const Home = () => {

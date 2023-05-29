@@ -1,0 +1,136 @@
+.container_activite {
+  display: flex;
+  width: 80%;
+  height: 78vh;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.container_activite .container_aside {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid white;
+}
+
+.container_aside .container_top {
+  margin-left: 10px;
+  width: 100%;
+  height: 10%;
+}
+.container_aside .container_bottom {
+  width: 100%;
+  height: 90%;
+  border-top: 1px solid white;
+}
+
+.container_bottom .container_link {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_link .content_part1 {
+  display: flex;
+  margin-top: 15px;
+}
+
+.no_space {
+  padding: 0;
+  margin: 0;
+}
+
+.no_space {
+  padding: 0;
+  margin: 0;
+}
+
+.space {
+  margin: 0 15px 0 15px;
+  font-size: 25px;
+}
+
+.space_top {
+  margin: 0 15px 0 0;
+  font-size: 20px;
+}
+
+.no_spaceh {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.container_activite .container_main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_main .container_top {
+  width: 95%;
+  height: 10%;
+  border-bottom: 1px solid white;
+  display: flex;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_top .content_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content_top .content_state {
+  display: flex;
+  margin-left: 25px;
+  padding-bottom: 24px;
+  margin-top: 19px;
+}
+
+.container_main .container_bottom {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  margin-top: 47px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_bottom .fa_error {
+  font-size: 58px;
+  color: orange;
+}
+
+.container_bottom .font_text {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.container_top .font_p {
+  font-weight: bold;
+}
+
+.content_part1:hover {
+  background-color: rgba(255, 255, 255, 0.112);
+  cursor: pointer;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card1 {
+  border-left: 3px solid #fefcfc;
+}
+
+.card2 {
+  border-bottom: 3px solid #fefcfc;
+}

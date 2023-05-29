@@ -1,0 +1,125 @@
+.content_plus {
+  width: 21%;
+  height: 45vh;
+  position: absolute;
+  z-index: 15;
+  background-color: rgb(33, 30, 30);
+  border-radius: 10px;
+  left: 20px;
+  bottom: 138px;
+}
+
+.contenaire_plus {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.contenaire_plus .parametre {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.contenaire_plus .activite {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.contenaire_plus .enregistre {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.contenaire_plus .change {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.contenaire_plus .signale {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.contenaire_plus .ch_compte {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.contenaire_plus .deconnexion {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+ .fa_space{
+    margin-right: 14px;
+    font-size: 25px;
+}
+
+.close_plus{
+    display: none;
+}
+
+.deconnexion:hover{
+    background-color: rgba(255, 255, 255, 0.112);
+    margin-right: 18px;
+    padding-left: 10px; 
+    border-radius: 10px; 
+}
+
+.ch_compte:hover{
+    background-color: rgba(255, 255, 255, 0.112); 
+    margin-right: 18px;
+    padding-left: 10px; 
+    border-radius: 10px;  
+}
+
+.signale:hover{
+    background-color: rgba(255, 255, 255, 0.112);
+    margin-right: 18px;
+    padding-left: 10px; 
+    border-radius: 10px;   
+}
+
+.change:hover{
+    background-color: rgba(255, 255, 255, 0.112);
+    margin-right: 18px;
+    padding-left: 10px; 
+    border-radius: 10px;   
+}
+
+.enregistre:hover{
+    background-color: rgba(255, 255, 255, 0.112);
+    margin-right: 18px;
+    padding-left: 10px; 
+    border-radius: 10px;   
+}
+
+.activite:hover{
+    background-color: rgba(255, 255, 255, 0.112);
+    margin-right: 18px;
+    padding-left: 10px; 
+    border-radius: 10px;   
+}
+
+.parametre:hover{
+    background-color: rgba(255, 255, 255, 0.112); 
+    margin-right: 18px;
+    padding-left: 10px; 
+    border-radius: 10px;  
+}
+
