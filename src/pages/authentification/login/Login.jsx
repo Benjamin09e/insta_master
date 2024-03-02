@@ -1,22 +1,30 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiFillFacebook } from "react-icons/ai";
 import "../authentification.css";
 import "../../../components/footer/Footer.css";
-import axios from "axios";
+import { LoginApi } from "../../../services/apiRequest";
+import userConnect from "../../../context/userConnect";
+import auth from "../../../context/auth";
 
-const Login = ({ setAuth }) => {
+
+
+const Login = () => {
+  const { setAuth } = useContext(auth);
+  const { setIsUser } = useContext(userConnect);
   const [email, setEmail] = useState("");
   const [mot_de_passe, setMot_de_passe] = useState("");
 
   const handleSubmit = async () => {
-    await axios
-      .post("http://localhost:5000/api/login", {
-        email: email,
-        mot_de_passe: mot_de_passe,
-      })
+    await LoginApi(email, mot_de_passe)
       .then((response) => {
         console.log(response);
+        setAuth(response.status)
+        setIsUser(response.elements)
+        // Réinitialiser les valeurs des champs après la soumission
+        setEmail('');
+        setMot_de_passe('');
+        console.log(response)
       })
       .catch((error) => {
         console.log(error);
@@ -31,7 +39,7 @@ const Login = ({ setAuth }) => {
             <h1>Instagram</h1>
           </div>
 
-          <div  className="signup">
+          <div className="signup">
             <div className="field">
               <input
                 value={email}
@@ -57,7 +65,7 @@ const Login = ({ setAuth }) => {
             <div className="field btn">
               <button onClick={handleSubmit} className="btn-layer">Se Connecter</button>
             </div>
-           </div>
+          </div>
           <hr />
           <div className="space-btn">
             <NavLink className="nav-link" to="#">

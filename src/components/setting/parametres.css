@@ -1,0 +1,101 @@
+.content_parametre {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.container_param {
+  width: 380px;
+  height: max-content;
+  position: relative;
+  background-color: rgb(33, 30, 30);
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.title h3 {
+  margin: 0;
+}
+
+.title icon {
+  font-size: 15px;
+  border: none;
+}
+
+.input_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.input_search input {
+  width: 90%;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.input_search input:focus {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+
+.follow_list {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  justify-content: flex-start;
+}
+
+/*
+.follow_list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+*/
+
+.followItem{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+
+}
+
+.nom_pict {
+  display: flex;
+  place-items: center;
+  width: 50%;
+
+}
+
+.nom p{
+  margin: 5px 0;
+}
+
+.pict {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.pict img {
+  width: 100%;
+  border-radius: 50px;
+
+}

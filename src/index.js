@@ -1,16 +1,17 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
+import React, { useState } from 'react';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-
+import Entre from './Entre';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Utilisez useState pour gérer l'état de l'authentification (true/false)
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Entre/>
     </BrowserRouter>
   </React.StrictMode>
 );

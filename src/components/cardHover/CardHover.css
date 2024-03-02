@@ -1,13 +1,13 @@
 .card {
     display: flex;
     background-color: rgb(6, 6, 6);
-    width: 33%;
+    width: 30%;
     height: 30vh;
     padding-top: 5px;
   }
   
   .card .card_img{
-    width: 100%;
+    width: 200%;
   }
 
   .card:hover{
@@ -20,7 +20,7 @@
     align-items: center;
     position: absolute;
     z-index: 8;
-    width: 100%;
+    width: 200%;
     height: 100%;
     background-color: rgba(6, 5, 5, 0.343);
   }

@@ -1,0 +1,188 @@
+.container_profil {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+
+}
+
+.container_profil .aside {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border-right: 1px solid white;
+}
+
+ .photos_perso{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.photos_perso .img_perso img{
+  height: 92px;
+  border-radius: 50%;
+}
+
+.photos_perso .perso_name{
+  width: 80%;
+}
+
+.container_profil .info_profil {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.info_profil .info_title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.info_title .photos_perso{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info_title .photos_perso .img_perso img{
+  height: 92px;
+  border-radius: 50%;
+}
+
+.info_title .photos_perso .perso_name{
+  width: 80%;
+}
+
+.info_title .nom{
+  display: flex;
+  width: 100%;
+}
+
+.nom .name_compl{
+  width: 20%;
+}
+
+.nom .names_input{
+  width: 80%;
+}
+
+.info_title .user_name{
+  display: flex;
+  width: 100%;
+}
+
+.info_title .usercomplet_name{
+  width: 20%;
+}
+
+.info_title .usercomplet_input{
+  width: 80%;
+}
+
+.info_title .site{
+  display: flex;
+  width: 100%;
+}
+
+.site .site_name{
+  width: 20%;
+}
+
+.site .site_input{
+  width: 80%;
+}
+
+.info_title .bio{
+  display: flex;
+  width: 100%;
+}
+
+.bio .bio_name{
+  width: 20%;
+}
+
+.bio .bio_input{
+  width: 80%;
+}
+
+.info_title .adresses{
+  display: flex;
+  width: 100%;
+}
+
+.adresses .adresses_name{
+  width: 20%;
+}
+
+.adresses .adresses_input{
+  width: 80%;
+}
+
+.info_title .numberphone{
+  display: flex;
+  width: 100%;
+}
+
+.numberphone .numberphone_tel{
+  width: 20%;
+}
+
+.numberphone .numberphone_input{
+  width: 80%;
+}
+
+.info_title .genre{
+  display: flex;
+  width: 100%;
+}
+
+.genre .genre_name{
+  width: 20%;
+}
+
+.genre .genre_input{
+  width: 80%;
+}
+
+.width_input{
+  background:rgb(25, 26, 26);
+  border: none;
+  width: 30vw;
+}
+
+.parametre_links{
+  width: 80%;
+  display: flex;
+  color: white;
+  font-size: 15px;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: 0,4s;
+  border: none;
+  background: none;
+  padding-left: 20px;
+  margin-top:4px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.parametre_links:hover{
+  background-color: rgba(255, 255, 255, 0.112);  
+}
+
+
+
+
+
+

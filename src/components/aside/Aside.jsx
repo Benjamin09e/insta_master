@@ -12,6 +12,7 @@ import {
 } from "react-icons/tfi";
 import { CgProfile } from "react-icons/cg";
 
+
 import "./Aside.css";
 
 const Aside = ({setCreer, setPlus, plus}) => {
@@ -43,7 +44,7 @@ const Aside = ({setCreer, setPlus, plus}) => {
       <NavLink to="/profile" className="aside-links">
         <CgProfile className="icon" /> Profil
       </NavLink>
-      <NavLink to="/plus" onClick={Plus} className="aside-links">
+      <NavLink onClick={Plus} className="aside-links">
         <TfiMenu className="icon" /> Plus
       </NavLink>
     </div>

@@ -1,0 +1,45 @@
+.content_followers {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.container_followers{
+  width: 380px;
+  height: max-content;
+  position: relative;
+  background-color: rgb(33, 30, 30);
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container_followers a{
+  width: 380px;
+  height: max-content;
+  justify-content: center;
+  display: flex;
+  color: azure;
+  text-decoration: none;
+  border-bottom: 1px solid #c9c9c9;
+  padding: 20px 0;
+}
+
+.container_followers button{
+  padding: 10px 0;
+  text-decoration: none;
+  color: azure;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: none;
+}
+
+
+

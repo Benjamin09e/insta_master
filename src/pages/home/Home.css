@@ -157,6 +157,7 @@
   width: 100%;
   height: 45vh;
   background-color: coral;
+  overflow: hidden;
 }
 
 .post_icon {

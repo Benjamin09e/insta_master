@@ -11,7 +11,8 @@ import {
 import { CiSaveDown1, CiFaceSmile } from "react-icons/ci";
 import { RiShareForwardFill } from "react-icons/ri";
 
-const Post = () => {
+const Post = ({post, onShowModal}) => {
+  
   return (
     <div className="home_posts">
       <div className="post_top">
@@ -20,7 +21,7 @@ const Post = () => {
             <img src={user} />
           </div>
           <div>
-            <p className="p_name">benjaminekia . 3j</p>
+            {/* <p className="p_name">{`${post.user.nom} ${post.user.prenom}`}</p> */}
             <p className="p_name">Audio origine</p>
           </div>
         </div>
@@ -29,7 +30,9 @@ const Post = () => {
         </div>
       </div>
 
-      <div className="post_containte"></div>
+      <div className="post_containte">
+        <img src={post.images}  onClick={() => onShowModal(post._id)}/>
+      </div>
       <div className="post_icon">
         <div>
           <AiOutlineHeart className="post_awesome" />
@@ -44,8 +47,7 @@ const Post = () => {
         <h5 className="post_title">4 j'aime</h5>
       </div>
       <div className="post_discription">
-        <p>Description du post publié </p>
-        <p>...</p>
+        <p>{post.description && `${post.description.slice(0, 100)}...`} </p>
         <p>plus</p>
       </div>
       <div className="post_input">

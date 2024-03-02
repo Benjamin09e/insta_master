@@ -54,7 +54,6 @@ const ReelElement = () => {
         </div>
         <div>
           <FiSend />
-          
         </div>
         <div>
           <BiSave />
