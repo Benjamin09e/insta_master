@@ -7,8 +7,8 @@ import user2 from "../../assets/images/profil2.jpg";
 const CardHover = ({onShowModal, posts }) => {
 
   return (
-    <div onClick={() => onShowModal(posts._id)}>
-      <div className="card">
+    <div className="card" onClick={() => onShowModal(posts._id)}>
+      
         <img src={posts.images} alt="" className="card_img" />
         <div className="card_hover">
           <AiFillHeart />
@@ -17,7 +17,6 @@ const CardHover = ({onShowModal, posts }) => {
           <p>10</p>
         </div>
       </div>
-    </div>
   );
 };
 

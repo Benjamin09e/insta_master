@@ -1,13 +1,17 @@
 .card {
     display: flex;
     background-color: rgb(6, 6, 6);
-    width: 30%;
+    align-items: center;
+    justify-content: center;
     height: 30vh;
-    padding-top: 5px;
+    position: relative;
+    overflow: hidden;
   }
   
   .card .card_img{
-    width: 200%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .card:hover{
@@ -20,7 +24,7 @@
     align-items: center;
     position: absolute;
     z-index: 8;
-    width: 200%;
+    width: 100%;
     height: 100%;
     background-color: rgba(6, 5, 5, 0.343);
   }

@@ -16,13 +16,18 @@ import ShowImage from "../../components/showImage/ShowImage";
 const Home = ({ onShowModal, ShowModal, infoModal }) => {
   const { isUser } = useContext(userConnect);
 
+  const token = localStorage.getItem("stringToken")
+
   const [posts, setPosts] = useState([])
   useEffect(() => {
     const handleGet = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/insta-api/posts`
-        );
+          `http://localhost:5000/insta-api/posts`,{
+            headers: {
+              Authorization: `Bearer ${token}`
+          }
+          });
         setPosts(response.data)
       } catch (err) {
         // alert("Wrong credentials!!!");
@@ -33,7 +38,8 @@ const Home = ({ onShowModal, ShowModal, infoModal }) => {
     handleGet()
   }, [])
 
-  console.log(isUser)
+  // console.log(isUser)
+  // console.log(posts)
   return (
     <>
       <div className="home_containte">
@@ -57,7 +63,7 @@ const Home = ({ onShowModal, ShowModal, infoModal }) => {
           <div>
             {
               posts?.map(post => (
-                <Post key={post._id} post={post} onShowModal={onShowModal}  />
+                <Post key={post._id} post={post} onShowModal={onShowModal} setPosts={setPosts} />
               ))
             }
           </div>
@@ -98,6 +104,7 @@ const Home = ({ onShowModal, ShowModal, infoModal }) => {
         </div>
       </div>
       {ShowModal && (<ShowImage onShowModal={onShowModal} infoModal= {infoModal}  />)}
+      
     </>
   );
 };

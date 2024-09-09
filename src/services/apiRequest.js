@@ -10,6 +10,8 @@ export function hasAuthenticated() {
   }
   return result;
 }
+
+
 export function hasAuthenticate() {
   const token = getitem();
   if (token) {

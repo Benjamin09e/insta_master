@@ -4,3 +4,7 @@
     object-fit: cover;
     display: block;
 }
+
+.home_posts {
+    height:  max-content  !important;
+}

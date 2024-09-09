@@ -2,7 +2,6 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height: 170vh;
 }
 
 /*------------------------------ profile_user -------------------------*/
@@ -50,10 +49,18 @@
   margin-bottom: 10px;
 
 }
+
 .profile_text .profile_notif p{
   margin-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.profile_notif a{
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
 }
 .profile_text .profile_plus p{
   margin-right: 20px;
@@ -113,21 +120,14 @@
 
 /*------------------------------ profile_card -------------------------*/
 .profile_containte .profile_card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
   width: 100%;
   height: max-content;
+  margin-top: 15px;
 }
 
-.profile_card {
-  display: flex;
-  background-color: rgb(6, 6, 6);
-  width: 33%;
-  height: 30vh;
-  padding-top: 5px;
-}
 
 .show {
   border-top: 3px solid #fefcfc;

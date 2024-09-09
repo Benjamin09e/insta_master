@@ -78,18 +78,17 @@ const Profil = ({ ShowModal, onShowModal, infoModal}) => {
         setUserElement(response.data)
 
         const res = await axios.get(
-          `http://localhost:5000/insta-api/posts/user-posts/${isUser.id}`
+          `http://localhost:5000/insta-api/posts/users/${isUser.id}`
         );
         setPostPub(res.data)
       } catch (err) {
         console.log(err)
       }
     };
-
     handleSend()
   }, [])
 
-  console.log(isUser.id)
+   console.log(postPub)
 
   return (
     <>
@@ -163,16 +162,12 @@ const Profil = ({ ShowModal, onShowModal, infoModal}) => {
         )}
         {show === "reels" && (
           <div className="profile_card">
-            <CardHover onShowModal={onShowModal} />
-            <CardHover onShowModal={onShowModal} />
-            <CardHover onShowModal={onShowModal} />
+           
           </div>
         )}
         {show === "identifie" && (
           <div className="profile_card">
-            <CardHover onShowModal={onShowModal} />
-            <CardHover onShowModal={onShowModal} />
-            <CardHover onShowModal={onShowModal} />
+            
           </div>
         )}
         <div className="profile_footer">

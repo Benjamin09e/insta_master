@@ -9,7 +9,7 @@ import {
   BiSave,
 } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
-import video from "../../assets/videos/Lauren.mp4"
+import video from "../../assets/videos/Jesus_I_Need_You.mp4"
 
 
 const ReelElement = () => {
